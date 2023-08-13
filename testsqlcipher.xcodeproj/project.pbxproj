@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B721E0B2A88E0F40012FA53 /* testsqlcipherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E0A2A88E0F40012FA53 /* testsqlcipherApp.swift */; };
+		0B721E0D2A88E0F40012FA53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E0C2A88E0F40012FA53 /* ContentView.swift */; };
+		0B721E0F2A88E0F50012FA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B721E0E2A88E0F50012FA53 /* Assets.xcassets */; };
+		0B721E122A88E0F50012FA53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B721E112A88E0F50012FA53 /* Preview Assets.xcassets */; };
+		0B721E1C2A88E0F50012FA53 /* testsqlcipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E1B2A88E0F50012FA53 /* testsqlcipherTests.swift */; };
+		0B721E262A88E0F50012FA53 /* testsqlcipherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E252A88E0F50012FA53 /* testsqlcipherUITests.swift */; };
+		0B721E282A88E0F50012FA53 /* testsqlcipherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E272A88E0F50012FA53 /* testsqlcipherUITestsLaunchTests.swift */; };
+		0B721E352A88E17B0012FA53 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B721E342A88E17B0012FA53 /* Database.swift */; };
+		0B721E3A2A893F030012FA53 /* crsqlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B721E382A893D870012FA53 /* crsqlite.framework */; };
+		0B721E3B2A893F030012FA53 /* crsqlite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B721E382A893D870012FA53 /* crsqlite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11D9259B3A8F97F97B9293B7 /* Pods_testsqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388A89BB0CB790FC0EF62EEE /* Pods_testsqlcipher.framework */; };
+		964DC0B073CFA2B7CDCC3E10 /* Pods_testsqlcipherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D25088F11CC913A44A1CE8E /* Pods_testsqlcipherTests.framework */; };
+		FD8BC6BFEA140ED1C473EAE5 /* Pods_testsqlcipher_testsqlcipherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5934E651A690CD62E9AEF439 /* Pods_testsqlcipher_testsqlcipherUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B721E182A88E0F50012FA53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B721DFF2A88E0F40012FA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B721E062A88E0F40012FA53;
+			remoteInfo = testsqlcipher;
+		};
+		0B721E222A88E0F50012FA53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B721DFF2A88E0F40012FA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B721E062A88E0F40012FA53;
+			remoteInfo = testsqlcipher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B721E3C2A893F030012FA53 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0B721E3B2A893F030012FA53 /* crsqlite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B721E072A88E0F40012FA53 /* testsqlcipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testsqlcipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B721E0A2A88E0F40012FA53 /* testsqlcipherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testsqlcipherApp.swift; sourceTree = "<group>"; };
+		0B721E0C2A88E0F40012FA53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B721E0E2A88E0F50012FA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B721E112A88E0F50012FA53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B721E172A88E0F50012FA53 /* testsqlcipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testsqlcipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B721E1B2A88E0F50012FA53 /* testsqlcipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testsqlcipherTests.swift; sourceTree = "<group>"; };
+		0B721E212A88E0F50012FA53 /* testsqlcipherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testsqlcipherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B721E252A88E0F50012FA53 /* testsqlcipherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testsqlcipherUITests.swift; sourceTree = "<group>"; };
+		0B721E272A88E0F50012FA53 /* testsqlcipherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testsqlcipherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B721E342A88E17B0012FA53 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		0B721E372A88E3480012FA53 /* testsqlcipher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testsqlcipher-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B721E382A893D870012FA53 /* crsqlite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = crsqlite.framework; sourceTree = "<group>"; };
+		370AE99FA4600AA607D529BB /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig"; path = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		388A89BB0CB790FC0EF62EEE /* Pods_testsqlcipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testsqlcipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		486AA208A6A19E80C7523E48 /* Pods-testsqlcipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipher.debug.xcconfig"; path = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher.debug.xcconfig"; sourceTree = "<group>"; };
+		4D25088F11CC913A44A1CE8E /* Pods_testsqlcipherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testsqlcipherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		517D4859BEB61C33747260EE /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig"; path = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5934E651A690CD62E9AEF439 /* Pods_testsqlcipher_testsqlcipherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testsqlcipher_testsqlcipherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987153D3E9B6E7EBF3AFCDD5 /* Pods-testsqlcipherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipherTests.release.xcconfig"; path = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5CD5B03DB87FB2A125CEFCF /* Pods-testsqlcipherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipherTests.debug.xcconfig"; path = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE7DEA0F4A28FAC7BEEFEFD /* Pods-testsqlcipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testsqlcipher.release.xcconfig"; path = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B721E042A88E0F40012FA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D9259B3A8F97F97B9293B7 /* Pods_testsqlcipher.framework in Frameworks */,
+				0B721E3A2A893F030012FA53 /* crsqlite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E142A88E0F50012FA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964DC0B073CFA2B7CDCC3E10 /* Pods_testsqlcipherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E1E2A88E0F50012FA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8BC6BFEA140ED1C473EAE5 /* Pods_testsqlcipher_testsqlcipherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B721DFE2A88E0F40012FA53 = {
+			isa = PBXGroup;
+			children = (
+				0B721E382A893D870012FA53 /* crsqlite.framework */,
+				0B721E092A88E0F40012FA53 /* testsqlcipher */,
+				0B721E1A2A88E0F50012FA53 /* testsqlcipherTests */,
+				0B721E242A88E0F50012FA53 /* testsqlcipherUITests */,
+				0B721E082A88E0F40012FA53 /* Products */,
+				B091CAD5D66ED43A48ECA5D0 /* Pods */,
+				FDFB21393724E77281A39A49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B721E082A88E0F40012FA53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B721E072A88E0F40012FA53 /* testsqlcipher.app */,
+				0B721E172A88E0F50012FA53 /* testsqlcipherTests.xctest */,
+				0B721E212A88E0F50012FA53 /* testsqlcipherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B721E092A88E0F40012FA53 /* testsqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				0B721E0A2A88E0F40012FA53 /* testsqlcipherApp.swift */,
+				0B721E0C2A88E0F40012FA53 /* ContentView.swift */,
+				0B721E0E2A88E0F50012FA53 /* Assets.xcassets */,
+				0B721E102A88E0F50012FA53 /* Preview Content */,
+				0B721E342A88E17B0012FA53 /* Database.swift */,
+				0B721E372A88E3480012FA53 /* testsqlcipher-Bridging-Header.h */,
+			);
+			path = testsqlcipher;
+			sourceTree = "<group>";
+		};
+		0B721E102A88E0F50012FA53 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0B721E112A88E0F50012FA53 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B721E1A2A88E0F50012FA53 /* testsqlcipherTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B721E1B2A88E0F50012FA53 /* testsqlcipherTests.swift */,
+			);
+			path = testsqlcipherTests;
+			sourceTree = "<group>";
+		};
+		0B721E242A88E0F50012FA53 /* testsqlcipherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B721E252A88E0F50012FA53 /* testsqlcipherUITests.swift */,
+				0B721E272A88E0F50012FA53 /* testsqlcipherUITestsLaunchTests.swift */,
+			);
+			path = testsqlcipherUITests;
+			sourceTree = "<group>";
+		};
+		B091CAD5D66ED43A48ECA5D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				486AA208A6A19E80C7523E48 /* Pods-testsqlcipher.debug.xcconfig */,
+				EFE7DEA0F4A28FAC7BEEFEFD /* Pods-testsqlcipher.release.xcconfig */,
+				517D4859BEB61C33747260EE /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */,
+				370AE99FA4600AA607D529BB /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */,
+				C5CD5B03DB87FB2A125CEFCF /* Pods-testsqlcipherTests.debug.xcconfig */,
+				987153D3E9B6E7EBF3AFCDD5 /* Pods-testsqlcipherTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDFB21393724E77281A39A49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				388A89BB0CB790FC0EF62EEE /* Pods_testsqlcipher.framework */,
+				5934E651A690CD62E9AEF439 /* Pods_testsqlcipher_testsqlcipherUITests.framework */,
+				4D25088F11CC913A44A1CE8E /* Pods_testsqlcipherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B721E062A88E0F40012FA53 /* testsqlcipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B721E2B2A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipher" */;
+			buildPhases = (
+				C4282309718B6B3D7F15B8A4 /* [CP] Check Pods Manifest.lock */,
+				0B721E032A88E0F40012FA53 /* Sources */,
+				0B721E042A88E0F40012FA53 /* Frameworks */,
+				0B721E052A88E0F40012FA53 /* Resources */,
+				D0010BE371145FF6B2ED4958 /* [CP] Embed Pods Frameworks */,
+				0B721E3C2A893F030012FA53 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testsqlcipher;
+			productName = testsqlcipher;
+			productReference = 0B721E072A88E0F40012FA53 /* testsqlcipher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B721E162A88E0F50012FA53 /* testsqlcipherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B721E2E2A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipherTests" */;
+			buildPhases = (
+				5D9E0BB1F8596DDBB1E50C5C /* [CP] Check Pods Manifest.lock */,
+				0B721E132A88E0F50012FA53 /* Sources */,
+				0B721E142A88E0F50012FA53 /* Frameworks */,
+				0B721E152A88E0F50012FA53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B721E192A88E0F50012FA53 /* PBXTargetDependency */,
+			);
+			name = testsqlcipherTests;
+			productName = testsqlcipherTests;
+			productReference = 0B721E172A88E0F50012FA53 /* testsqlcipherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B721E202A88E0F50012FA53 /* testsqlcipherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B721E312A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipherUITests" */;
+			buildPhases = (
+				27079364BAE1401736625977 /* [CP] Check Pods Manifest.lock */,
+				0B721E1D2A88E0F50012FA53 /* Sources */,
+				0B721E1E2A88E0F50012FA53 /* Frameworks */,
+				0B721E1F2A88E0F50012FA53 /* Resources */,
+				02E129E22ABF9380857A8227 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B721E232A88E0F50012FA53 /* PBXTargetDependency */,
+			);
+			name = testsqlcipherUITests;
+			productName = testsqlcipherUITests;
+			productReference = 0B721E212A88E0F50012FA53 /* testsqlcipherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B721DFF2A88E0F40012FA53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0B721E062A88E0F40012FA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0B721E162A88E0F50012FA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0B721E062A88E0F40012FA53;
+					};
+					0B721E202A88E0F50012FA53 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0B721E062A88E0F40012FA53;
+					};
+				};
+			};
+			buildConfigurationList = 0B721E022A88E0F40012FA53 /* Build configuration list for PBXProject "testsqlcipher" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B721DFE2A88E0F40012FA53;
+			productRefGroup = 0B721E082A88E0F40012FA53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B721E062A88E0F40012FA53 /* testsqlcipher */,
+				0B721E162A88E0F50012FA53 /* testsqlcipherTests */,
+				0B721E202A88E0F50012FA53 /* testsqlcipherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B721E052A88E0F40012FA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B721E122A88E0F50012FA53 /* Preview Assets.xcassets in Resources */,
+				0B721E0F2A88E0F50012FA53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E152A88E0F50012FA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E1F2A88E0F50012FA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E129E22ABF9380857A8227 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27079364BAE1401736625977 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testsqlcipher-testsqlcipherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9E0BB1F8596DDBB1E50C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testsqlcipherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4282309718B6B3D7F15B8A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testsqlcipher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0010BE371145FF6B2ED4958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B721E032A88E0F40012FA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B721E352A88E17B0012FA53 /* Database.swift in Sources */,
+				0B721E0D2A88E0F40012FA53 /* ContentView.swift in Sources */,
+				0B721E0B2A88E0F40012FA53 /* testsqlcipherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E132A88E0F50012FA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B721E1C2A88E0F50012FA53 /* testsqlcipherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B721E1D2A88E0F50012FA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B721E282A88E0F50012FA53 /* testsqlcipherUITestsLaunchTests.swift in Sources */,
+				0B721E262A88E0F50012FA53 /* testsqlcipherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B721E192A88E0F50012FA53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B721E062A88E0F40012FA53 /* testsqlcipher */;
+			targetProxy = 0B721E182A88E0F50012FA53 /* PBXContainerItemProxy */;
+		};
+		0B721E232A88E0F50012FA53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B721E062A88E0F40012FA53 /* testsqlcipher */;
+			targetProxy = 0B721E222A88E0F50012FA53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B721E292A88E0F50012FA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B721E2A2A88E0F50012FA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B721E2C2A88E0F50012FA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486AA208A6A19E80C7523E48 /* Pods-testsqlcipher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testsqlcipher/Preview Content\"";
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "testsqlcipher/testsqlcipher-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B721E2D2A88E0F50012FA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE7DEA0F4A28FAC7BEEFEFD /* Pods-testsqlcipher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"testsqlcipher/Preview Content\"";
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "testsqlcipher/testsqlcipher-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B721E2F2A88E0F50012FA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CD5B03DB87FB2A125CEFCF /* Pods-testsqlcipherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testsqlcipher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/testsqlcipher";
+			};
+			name = Debug;
+		};
+		0B721E302A88E0F50012FA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987153D3E9B6E7EBF3AFCDD5 /* Pods-testsqlcipherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testsqlcipher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/testsqlcipher";
+			};
+			name = Release;
+		};
+		0B721E322A88E0F50012FA53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 517D4859BEB61C33747260EE /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testsqlcipher;
+			};
+			name = Debug;
+		};
+		0B721E332A88E0F50012FA53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 370AE99FA4600AA607D529BB /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6J45A8GL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.testsqlcipherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testsqlcipher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B721E022A88E0F40012FA53 /* Build configuration list for PBXProject "testsqlcipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B721E292A88E0F50012FA53 /* Debug */,
+				0B721E2A2A88E0F50012FA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B721E2B2A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B721E2C2A88E0F50012FA53 /* Debug */,
+				0B721E2D2A88E0F50012FA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B721E2E2A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B721E2F2A88E0F50012FA53 /* Debug */,
+				0B721E302A88E0F50012FA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B721E312A88E0F50012FA53 /* Build configuration list for PBXNativeTarget "testsqlcipherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B721E322A88E0F50012FA53 /* Debug */,
+				0B721E332A88E0F50012FA53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B721DFF2A88E0F40012FA53 /* Project object */;
+}

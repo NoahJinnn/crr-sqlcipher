@@ -1,0 +1,20 @@
+PODS:
+  - SQLCipher (4.5.4):
+    - SQLCipher/standard (= 4.5.4)
+  - SQLCipher/common (4.5.4)
+  - SQLCipher/standard (4.5.4):
+    - SQLCipher/common
+
+DEPENDENCIES:
+  - SQLCipher (~> 4.5)
+
+SPEC REPOS:
+  trunk:
+    - SQLCipher
+
+SPEC CHECKSUMS:
+  SQLCipher: 905b145f65f349f26da9e60a19901ad24adcd381
+
+PODFILE CHECKSUM: d5ba6a14a43cbf607d273eb019641f1c76ddbddb
+
+COCOAPODS: 1.12.1

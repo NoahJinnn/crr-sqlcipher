@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007BA6D92A748FEC5B9FAAD746107EC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		066FC837CC507C73F3D5A2F0BF2F1FE3 /* Pods-testsqlcipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF03AE1B02980816AD7E54F4C1C3F05 /* Pods-testsqlcipher-dummy.m */; };
+		23A55F12E73F7CE5659898A1B6082102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		3C486A28B2618549A56FE9CB93610820 /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A2872E600E9A746D096C16F2EBCBCA /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481730739E8F23EC45A2D64B2927AA71 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */; };
+		62AA43FCE46E6F7922E526782308A46E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = FC29DBE0409C118D71AA46627E3967DF /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999 -fno-objc-arc"; }; };
+		768DBF389EF7A0DB92DB6685A6C4197E /* Pods-testsqlcipherTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB5F6AF8A1C4E180844251A268E1446 /* Pods-testsqlcipherTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A747AA6BC387AE4B494DC94FA1DA5E5 /* Pods-testsqlcipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2991C22E72B66786F0AAAFAD8E21D4F /* Pods-testsqlcipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA2A98B300F6A2F438A5439822646CB7 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = E2ACA340E697922AEC7D81820FD63046 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD5C5042EF68D0DF2C729D622F69890A /* Pods-testsqlcipherTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC998A64986ABB8912434C8B1C869E1E /* Pods-testsqlcipherTests-dummy.m */; };
+		CF4DB579139E8F533154A4599B63C213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		D50B7A59213B0A036EFBBF171EB89313 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		DB86C1187860B3B21BA5DBFD85FDD6FD /* Pods-testsqlcipher-testsqlcipherUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C77C036CC1CFBA42979A495BA062B /* Pods-testsqlcipher-testsqlcipherUITests-dummy.m */; };
+		E54D269DC415824E1CA98C95C8BBD24F /* Pods-testsqlcipher-testsqlcipherUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDEBD1531B27DE7E9AAAFE7C946E66A /* Pods-testsqlcipher-testsqlcipherUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E827C96F61C81146EA5A05B7E69CA78A /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4769AA64068661236B3D136F70EEB862 /* SQLCipher-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7214B81C6B9343D26214F8F5936E2225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		9E568502039683047CADE7F2966BAE40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		AAD92C2EB5A40A6F7EDACC2A54C59133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A12CA71F3A45AC5EABA4E058BD0FD8EE;
+			remoteInfo = "Pods-testsqlcipher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EF03AE1B02980816AD7E54F4C1C3F05 /* Pods-testsqlcipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testsqlcipher-dummy.m"; sourceTree = "<group>"; };
+		13A2872E600E9A746D096C16F2EBCBCA /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
+		1C27FCE3221601096F815E22CB47FD45 /* Pods-testsqlcipher-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testsqlcipher-frameworks.sh"; sourceTree = "<group>"; };
+		1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E884733C67ABA58E18CE809087EF43 /* Pods-testsqlcipherTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-testsqlcipherTests"; path = Pods_testsqlcipherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352ED27C92FA6DE1307446E94334BECC /* Pods-testsqlcipherTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testsqlcipherTests.modulemap"; sourceTree = "<group>"; };
+		3ECD5041F27CC497ED97A9B292B3F0BC /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		3FF32DBA096086AD31F16EC316FF7140 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
+		4073EC487802AB410FCD60EC1FC3757D /* Pods-testsqlcipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipher.debug.xcconfig"; sourceTree = "<group>"; };
+		41AB974B20ED78002623B3AE5DE808F4 /* Pods-testsqlcipher-testsqlcipherUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipher-testsqlcipherUITests-Info.plist"; sourceTree = "<group>"; };
+		4769AA64068661236B3D136F70EEB862 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		486C4490F233F8939CC54EB70B591863 /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB5F6AF8A1C4E180844251A268E1446 /* Pods-testsqlcipherTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testsqlcipherTests-umbrella.h"; sourceTree = "<group>"; };
+		4DC91ABC1353AFC2F84F234962D4C2A1 /* Pods-testsqlcipher-testsqlcipherUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-testsqlcipher-testsqlcipherUITests"; path = Pods_testsqlcipher_testsqlcipherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF88F0AD8F11FEBED86385C469CC51E /* Pods-testsqlcipher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipher-acknowledgements.plist"; sourceTree = "<group>"; };
+		507055E366DA12DD0533545FC3F9C996 /* Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		574B53170F52352FBAC890F58411D999 /* Pods-testsqlcipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testsqlcipher.modulemap"; sourceTree = "<group>"; };
+		5CA33AC8C8A64F4C133DE3C07FCC1BEE /* Pods-testsqlcipher-testsqlcipherUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testsqlcipher-testsqlcipherUITests.modulemap"; sourceTree = "<group>"; };
+		5CAFA70CEE04D858736021D76DA2CC6F /* Pods-testsqlcipherTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipherTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6019CCFCE2DDB5F80AF5C344BA4A0798 /* Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6169EC5D1B363420A6F11C0843E5F89E /* Pods-testsqlcipherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D1C77C036CC1CFBA42979A495BA062B /* Pods-testsqlcipher-testsqlcipherUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testsqlcipher-testsqlcipherUITests-dummy.m"; sourceTree = "<group>"; };
+		8CFE38F6E472F81287C3A37961BF2254 /* Pods-testsqlcipherTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipherTests-Info.plist"; sourceTree = "<group>"; };
+		952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C03895B431AD27140B6A15767C93329 /* Pods-testsqlcipher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testsqlcipher-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D558BB7C7965D4E85FA793E7511CCE2 /* Pods-testsqlcipherTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testsqlcipherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DDEBD1531B27DE7E9AAAFE7C946E66A /* Pods-testsqlcipher-testsqlcipherUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testsqlcipher-testsqlcipherUITests-umbrella.h"; sourceTree = "<group>"; };
+		9DF5248D41F5FDDB9A194E546DA5CCF7 /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC998A64986ABB8912434C8B1C869E1E /* Pods-testsqlcipherTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testsqlcipherTests-dummy.m"; sourceTree = "<group>"; };
+		AD3BCEC4B9EBF8F3EDBF49C8FC7EF75B /* Pods-testsqlcipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testsqlcipher-Info.plist"; sourceTree = "<group>"; };
+		AF73D48D694B262EA8800D1CA5A7A175 /* SQLCipher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLCipher-Info.plist"; sourceTree = "<group>"; };
+		B695F9D32FA3625B320C264334D263FD /* Pods-testsqlcipher-testsqlcipherUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testsqlcipher-testsqlcipherUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C4C0DD5D50D76C77501E1D579A411282 /* Pods-testsqlcipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipher.release.xcconfig"; sourceTree = "<group>"; };
+		C75AA23AAAC4E8B90991234FF2FC9998 /* Pods-testsqlcipher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-testsqlcipher"; path = Pods_testsqlcipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2991C22E72B66786F0AAAFAD8E21D4F /* Pods-testsqlcipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testsqlcipher-umbrella.h"; sourceTree = "<group>"; };
+		DBE7A78B51EEBEABC17C836EF82E1763 /* Pods-testsqlcipherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testsqlcipherTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2ACA340E697922AEC7D81820FD63046 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		EFE434E808F4ACDAD53CAD2893B9A8DE /* SQLCipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.release.xcconfig; sourceTree = "<group>"; };
+		F1DBEF6B264AD5F07660CCEDCB9E0F82 /* SQLCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.debug.xcconfig; sourceTree = "<group>"; };
+		FC29DBE0409C118D71AA46627E3967DF /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		005CADFC6386A48631600F11904BDE1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4DB579139E8F533154A4599B63C213 /* Foundation.framework in Frameworks */,
+				481730739E8F23EC45A2D64B2927AA71 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A572D728B70F324E96807D4DF24A37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A55F12E73F7CE5659898A1B6082102 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF9BD61FFC57FADAC64ED0F4CC25185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50B7A59213B0A036EFBBF171EB89313 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F710E092E8B3F636C4525CEC3D1A5B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007BA6D92A748FEC5B9FAAD746107EC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE426AC267333500FABE7BA0A5A42A0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		441FB5D8002CE3C2CB8FD58EFB6B8119 /* Pods-testsqlcipherTests */ = {
+			isa = PBXGroup;
+			children = (
+				352ED27C92FA6DE1307446E94334BECC /* Pods-testsqlcipherTests.modulemap */,
+				9D558BB7C7965D4E85FA793E7511CCE2 /* Pods-testsqlcipherTests-acknowledgements.markdown */,
+				5CAFA70CEE04D858736021D76DA2CC6F /* Pods-testsqlcipherTests-acknowledgements.plist */,
+				AC998A64986ABB8912434C8B1C869E1E /* Pods-testsqlcipherTests-dummy.m */,
+				8CFE38F6E472F81287C3A37961BF2254 /* Pods-testsqlcipherTests-Info.plist */,
+				4DB5F6AF8A1C4E180844251A268E1446 /* Pods-testsqlcipherTests-umbrella.h */,
+				6169EC5D1B363420A6F11C0843E5F89E /* Pods-testsqlcipherTests.debug.xcconfig */,
+				DBE7A78B51EEBEABC17C836EF82E1763 /* Pods-testsqlcipherTests.release.xcconfig */,
+			);
+			name = "Pods-testsqlcipherTests";
+			path = "Target Support Files/Pods-testsqlcipherTests";
+			sourceTree = "<group>";
+		};
+		4F56363B58525BCB3F7D2228EF3BFCA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FF32DBA096086AD31F16EC316FF7140 /* SQLCipher.modulemap */,
+				4769AA64068661236B3D136F70EEB862 /* SQLCipher-dummy.m */,
+				AF73D48D694B262EA8800D1CA5A7A175 /* SQLCipher-Info.plist */,
+				3ECD5041F27CC497ED97A9B292B3F0BC /* SQLCipher-prefix.pch */,
+				13A2872E600E9A746D096C16F2EBCBCA /* SQLCipher-umbrella.h */,
+				F1DBEF6B264AD5F07660CCEDCB9E0F82 /* SQLCipher.debug.xcconfig */,
+				EFE434E808F4ACDAD53CAD2893B9A8DE /* SQLCipher.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLCipher";
+			sourceTree = "<group>";
+		};
+		5A7734726ECED540B4D769FCC0EABDE0 /* Pods-testsqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				574B53170F52352FBAC890F58411D999 /* Pods-testsqlcipher.modulemap */,
+				9C03895B431AD27140B6A15767C93329 /* Pods-testsqlcipher-acknowledgements.markdown */,
+				4EF88F0AD8F11FEBED86385C469CC51E /* Pods-testsqlcipher-acknowledgements.plist */,
+				0EF03AE1B02980816AD7E54F4C1C3F05 /* Pods-testsqlcipher-dummy.m */,
+				1C27FCE3221601096F815E22CB47FD45 /* Pods-testsqlcipher-frameworks.sh */,
+				AD3BCEC4B9EBF8F3EDBF49C8FC7EF75B /* Pods-testsqlcipher-Info.plist */,
+				D2991C22E72B66786F0AAAFAD8E21D4F /* Pods-testsqlcipher-umbrella.h */,
+				4073EC487802AB410FCD60EC1FC3757D /* Pods-testsqlcipher.debug.xcconfig */,
+				C4C0DD5D50D76C77501E1D579A411282 /* Pods-testsqlcipher.release.xcconfig */,
+			);
+			name = "Pods-testsqlcipher";
+			path = "Target Support Files/Pods-testsqlcipher";
+			sourceTree = "<group>";
+		};
+		6746CCF30CAE34654B19DDA6B383D05D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E74569A9C027A82A021AAB6F29D8BE3B /* SQLCipher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7CE426AC267333500FABE7BA0A5A42A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */,
+				C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B0A6A7EE414BB2F59F81D24917BF268 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A7734726ECED540B4D769FCC0EABDE0 /* Pods-testsqlcipher */,
+				D05732A114B655D57885C73B18B32899 /* Pods-testsqlcipher-testsqlcipherUITests */,
+				441FB5D8002CE3C2CB8FD58EFB6B8119 /* Pods-testsqlcipherTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F2226B41F836E2DB3B9BD3E59735190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C75AA23AAAC4E8B90991234FF2FC9998 /* Pods-testsqlcipher */,
+				4DC91ABC1353AFC2F84F234962D4C2A1 /* Pods-testsqlcipher-testsqlcipherUITests */,
+				32E884733C67ABA58E18CE809087EF43 /* Pods-testsqlcipherTests */,
+				1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				6746CCF30CAE34654B19DDA6B383D05D /* Pods */,
+				8F2226B41F836E2DB3B9BD3E59735190 /* Products */,
+				8B0A6A7EE414BB2F59F81D24917BF268 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D05732A114B655D57885C73B18B32899 /* Pods-testsqlcipher-testsqlcipherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CA33AC8C8A64F4C133DE3C07FCC1BEE /* Pods-testsqlcipher-testsqlcipherUITests.modulemap */,
+				6019CCFCE2DDB5F80AF5C344BA4A0798 /* Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.markdown */,
+				507055E366DA12DD0533545FC3F9C996 /* Pods-testsqlcipher-testsqlcipherUITests-acknowledgements.plist */,
+				6D1C77C036CC1CFBA42979A495BA062B /* Pods-testsqlcipher-testsqlcipherUITests-dummy.m */,
+				B695F9D32FA3625B320C264334D263FD /* Pods-testsqlcipher-testsqlcipherUITests-frameworks.sh */,
+				41AB974B20ED78002623B3AE5DE808F4 /* Pods-testsqlcipher-testsqlcipherUITests-Info.plist */,
+				9DDEBD1531B27DE7E9AAAFE7C946E66A /* Pods-testsqlcipher-testsqlcipherUITests-umbrella.h */,
+				486C4490F233F8939CC54EB70B591863 /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */,
+				9DF5248D41F5FDDB9A194E546DA5CCF7 /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */,
+			);
+			name = "Pods-testsqlcipher-testsqlcipherUITests";
+			path = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests";
+			sourceTree = "<group>";
+		};
+		E74569A9C027A82A021AAB6F29D8BE3B /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				EEA4CB4DFE16543549476985A542D6C6 /* common */,
+				4F56363B58525BCB3F7D2228EF3BFCA6 /* Support Files */,
+			);
+			name = SQLCipher;
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+		EEA4CB4DFE16543549476985A542D6C6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				FC29DBE0409C118D71AA46627E3967DF /* sqlite3.c */,
+				E2ACA340E697922AEC7D81820FD63046 /* sqlite3.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		039E55C57A1AA6FA2DF0BD2DDAED4FFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54D269DC415824E1CA98C95C8BBD24F /* Pods-testsqlcipher-testsqlcipherUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53001755F4259E2F7156CFA2BE7F91DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768DBF389EF7A0DB92DB6685A6C4197E /* Pods-testsqlcipherTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E327338741AAD2D1C6D2B5EA11816D73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C486A28B2618549A56FE9CB93610820 /* SQLCipher-umbrella.h in Headers */,
+				BA2A98B300F6A2F438A5439822646CB7 /* sqlite3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B6D4F4861ED643C3F656E4196F15D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A747AA6BC387AE4B494DC94FA1DA5E5 /* Pods-testsqlcipher-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A12CA71F3A45AC5EABA4E058BD0FD8EE /* Pods-testsqlcipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D44FC6F142E11729B606211B18CE082 /* Build configuration list for PBXNativeTarget "Pods-testsqlcipher" */;
+			buildPhases = (
+				E4B6D4F4861ED643C3F656E4196F15D6 /* Headers */,
+				CD1BD3ABB8BFB19DF322F7144880C3B5 /* Sources */,
+				8EF9BD61FFC57FADAC64ED0F4CC25185 /* Frameworks */,
+				915D25A51DFD364FBBC6F6FBBDD23414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C3D1291F702ECC42E97A88FD2D33FB /* PBXTargetDependency */,
+			);
+			name = "Pods-testsqlcipher";
+			productName = Pods_testsqlcipher;
+			productReference = C75AA23AAAC4E8B90991234FF2FC9998 /* Pods-testsqlcipher */;
+			productType = "com.apple.product-type.framework";
+		};
+		A94C9A013D1DFE6B3B50D3468E5A4718 /* Pods-testsqlcipher-testsqlcipherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29480321941FCA113F582283C642D812 /* Build configuration list for PBXNativeTarget "Pods-testsqlcipher-testsqlcipherUITests" */;
+			buildPhases = (
+				039E55C57A1AA6FA2DF0BD2DDAED4FFB /* Headers */,
+				5CFF71F0E6EA7CF35B71B4ED95A3B141 /* Sources */,
+				F710E092E8B3F636C4525CEC3D1A5B1B /* Frameworks */,
+				4E8046412AA6D42ACF112A39356C35E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCA8EED892C54481FD2679D59ADACB5 /* PBXTargetDependency */,
+			);
+			name = "Pods-testsqlcipher-testsqlcipherUITests";
+			productName = Pods_testsqlcipher_testsqlcipherUITests;
+			productReference = 4DC91ABC1353AFC2F84F234962D4C2A1 /* Pods-testsqlcipher-testsqlcipherUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7B0514E0E95DC3ADE289E1CEA4AF44B /* Pods-testsqlcipherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EF37AB27360CCC16D91C7CD45200CA /* Build configuration list for PBXNativeTarget "Pods-testsqlcipherTests" */;
+			buildPhases = (
+				53001755F4259E2F7156CFA2BE7F91DE /* Headers */,
+				351F0CCC7D7C634C31E74F79709C3553 /* Sources */,
+				5A572D728B70F324E96807D4DF24A37B /* Frameworks */,
+				1C28F442F7932992EE37A3BB6770EB4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC06F3299CE459F4C3B64E17E2321E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-testsqlcipherTests";
+			productName = Pods_testsqlcipherTests;
+			productReference = 32E884733C67ABA58E18CE809087EF43 /* Pods-testsqlcipherTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D21962D0DE148A440FADB55935BD4264 /* SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A573D9B8A4A2B2FF8A6AABF2E0AEE3 /* Build configuration list for PBXNativeTarget "SQLCipher" */;
+			buildPhases = (
+				E327338741AAD2D1C6D2B5EA11816D73 /* Headers */,
+				B303A9246A8BB25639D893606F47A8BA /* Sources */,
+				005CADFC6386A48631600F11904BDE1D /* Frameworks */,
+				B5279A224E316774D188FE13F373160C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLCipher;
+			productName = SQLCipher;
+			productReference = 1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8F2226B41F836E2DB3B9BD3E59735190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A12CA71F3A45AC5EABA4E058BD0FD8EE /* Pods-testsqlcipher */,
+				A94C9A013D1DFE6B3B50D3468E5A4718 /* Pods-testsqlcipher-testsqlcipherUITests */,
+				B7B0514E0E95DC3ADE289E1CEA4AF44B /* Pods-testsqlcipherTests */,
+				D21962D0DE148A440FADB55935BD4264 /* SQLCipher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C28F442F7932992EE37A3BB6770EB4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E8046412AA6D42ACF112A39356C35E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		915D25A51DFD364FBBC6F6FBBDD23414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5279A224E316774D188FE13F373160C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		351F0CCC7D7C634C31E74F79709C3553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5C5042EF68D0DF2C729D622F69890A /* Pods-testsqlcipherTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CFF71F0E6EA7CF35B71B4ED95A3B141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB86C1187860B3B21BA5DBFD85FDD6FD /* Pods-testsqlcipher-testsqlcipherUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B303A9246A8BB25639D893606F47A8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E827C96F61C81146EA5A05B7E69CA78A /* SQLCipher-dummy.m in Sources */,
+				62AA43FCE46E6F7922E526782308A46E /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1BD3ABB8BFB19DF322F7144880C3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066FC837CC507C73F3D5A2F0BF2F1FE3 /* Pods-testsqlcipher-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14C3D1291F702ECC42E97A88FD2D33FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 7214B81C6B9343D26214F8F5936E2225 /* PBXContainerItemProxy */;
+		};
+		AFCA8EED892C54481FD2679D59ADACB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 9E568502039683047CADE7F2966BAE40 /* PBXContainerItemProxy */;
+		};
+		CAC06F3299CE459F4C3B64E17E2321E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-testsqlcipher";
+			target = A12CA71F3A45AC5EABA4E058BD0FD8EE /* Pods-testsqlcipher */;
+			targetProxy = AAD92C2EB5A40A6F7EDACC2A54C59133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09A8F7317026CD2F991F7F9BBE7A3A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486C4490F233F8939CC54EB70B591863 /* Pods-testsqlcipher-testsqlcipherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CF95D51175862AD5267861114807A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6169EC5D1B363420A6F11C0843E5F89E /* Pods-testsqlcipherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51D2A67363C34041A37E79CAF76F6B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE7A78B51EEBEABC17C836EF82E1763 /* Pods-testsqlcipherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipherTests/Pods-testsqlcipherTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B0DE928C075FB61F5130005D89CDF5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C0DD5D50D76C77501E1D579A411282 /* Pods-testsqlcipher.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECCFB180FB5E9C894EE5FE4A004EC68A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE434E808F4ACDAD53CAD2893B9A8DE /* SQLCipher.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2AF6397C2F14882D6822CBBE4047A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4073EC487802AB410FCD60EC1FC3757D /* Pods-testsqlcipher.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipher/Pods-testsqlcipher.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6E6590DC3CC23FDDDFA93A6B317FF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DBEF6B264AD5F07660CCEDCB9E0F82 /* SQLCipher.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/SQLCipher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				PRODUCT_MODULE_NAME = SQLCipher;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FACFF2263F928F0EE5341A2513E08F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF5248D41F5FDDB9A194E546DA5CCF7 /* Pods-testsqlcipher-testsqlcipherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testsqlcipher-testsqlcipherUITests/Pods-testsqlcipher-testsqlcipherUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29480321941FCA113F582283C642D812 /* Build configuration list for PBXNativeTarget "Pods-testsqlcipher-testsqlcipherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A8F7317026CD2F991F7F9BBE7A3A29 /* Debug */,
+				FACFF2263F928F0EE5341A2513E08F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D44FC6F142E11729B606211B18CE082 /* Build configuration list for PBXNativeTarget "Pods-testsqlcipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2AF6397C2F14882D6822CBBE4047A51 /* Debug */,
+				B0DE928C075FB61F5130005D89CDF5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EF37AB27360CCC16D91C7CD45200CA /* Build configuration list for PBXNativeTarget "Pods-testsqlcipherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF95D51175862AD5267861114807A75 /* Debug */,
+				51D2A67363C34041A37E79CAF76F6B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A573D9B8A4A2B2FF8A6AABF2E0AEE3 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E6590DC3CC23FDDDFA93A6B317FF76 /* Debug */,
+				ECCFB180FB5E9C894EE5FE4A004EC68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
